@@ -14,7 +14,7 @@
                     summary:(NSString *)summary
                     hourlyRate: (NSNumber *)hourlyRate
                       hrWorked: (NSNumber *)hrWorked
-                         total: (NSNumber *)total
+                   
 {
     self = [super init];
     if(self){
@@ -22,11 +22,15 @@
         _summary = summary;
         _hourlyRate = hourlyRate;
         _hrWorked = hrWorked;
-        _total = total;
+ 
     }
     return self;
 };
 
+//Getter for "total" readonly property = computed property in Swift
+- (double)total{
+    return [_hourlyRate doubleValue] * [_hrWorked doubleValue];
+};
 
 
 @end

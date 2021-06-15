@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041D14AB2678B6FD00198EDC /* FGTTimedTrackerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041D14AA2678B6FD00198EDC /* FGTTimedTrackerViewModel.m */; };
 		0445E2BD2678911100AF609F /* FGTTimedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0445E2BC2678911100AF609F /* FGTTimedTask.m */; };
 		0445E2C32678919C00AF609F /* FGTTimeTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0445E2C22678919C00AF609F /* FGTTimeTrackerViewController.m */; };
 		467FC83C23F3738B00C15592 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FC83B23F3738B00C15592 /* AppDelegate.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041D14A92678B6FD00198EDC /* FGTTimedTrackerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGTTimedTrackerViewModel.h; sourceTree = "<group>"; };
+		041D14AA2678B6FD00198EDC /* FGTTimedTrackerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGTTimedTrackerViewModel.m; sourceTree = "<group>"; };
 		0445E2BB2678911100AF609F /* FGTTimedTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGTTimedTask.h; sourceTree = "<group>"; };
 		0445E2BC2678911100AF609F /* FGTTimedTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGTTimedTask.m; sourceTree = "<group>"; };
 		0445E2C12678919C00AF609F /* FGTTimeTrackerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGTTimeTrackerViewController.h; sourceTree = "<group>"; };
@@ -45,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041D14A42678B6C400198EDC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				041D14A92678B6FD00198EDC /* FGTTimedTrackerViewModel.h */,
+				041D14AA2678B6FD00198EDC /* FGTTimedTrackerViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0445E2BF2678911700AF609F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				0445E2C5267891A400AF609F /* Views */,
+				041D14A42678B6C400198EDC /* ViewModel */,
 				0445E2BF2678911700AF609F /* Model */,
 				467FC85423F373D300C15592 /* Storyboards */,
 				467FC85323F373C900C15592 /* Resources */,
@@ -188,6 +201,7 @@
 				467FC83C23F3738B00C15592 /* AppDelegate.m in Sources */,
 				467FC84D23F3738C00C15592 /* main.m in Sources */,
 				467FC83F23F3738B00C15592 /* SceneDelegate.m in Sources */,
+				041D14AB2678B6FD00198EDC /* FGTTimedTrackerViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
