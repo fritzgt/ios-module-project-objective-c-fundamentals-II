@@ -10,4 +10,23 @@
 
 @implementation FGTTimedTask
 
+- (instancetype)initWithClient:(NSString *) client
+                    summary:(NSString *)summary
+                    hourlyRate: (NSNumber *)hourlyRate
+                      hrWorked: (NSNumber *)hrWorked
+                         total: (NSNumber *)total
+{
+    self = [super init];
+    if(self){
+        _client = client;
+        _summary = summary;
+        _hourlyRate = hourlyRate;
+        _hrWorked = hrWorked;
+        _total = total;
+    }
+    return self;
+};
+
+
+
 @end

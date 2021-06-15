@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0445E2BD2678911100AF609F /* FGTTimedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0445E2BC2678911100AF609F /* FGTTimedTask.m */; };
+		0445E2C32678919C00AF609F /* FGTTimeTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0445E2C22678919C00AF609F /* FGTTimeTrackerViewController.m */; };
 		467FC83C23F3738B00C15592 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FC83B23F3738B00C15592 /* AppDelegate.m */; };
 		467FC83F23F3738B00C15592 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FC83E23F3738B00C15592 /* SceneDelegate.m */; };
 		467FC84523F3738B00C15592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467FC84323F3738B00C15592 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 /* Begin PBXFileReference section */
 		0445E2BB2678911100AF609F /* FGTTimedTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGTTimedTask.h; sourceTree = "<group>"; };
 		0445E2BC2678911100AF609F /* FGTTimedTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGTTimedTask.m; sourceTree = "<group>"; };
+		0445E2C12678919C00AF609F /* FGTTimeTrackerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGTTimeTrackerViewController.h; sourceTree = "<group>"; };
+		0445E2C22678919C00AF609F /* FGTTimeTrackerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGTTimeTrackerViewController.m; sourceTree = "<group>"; };
 		467FC83723F3738B00C15592 /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467FC83A23F3738B00C15592 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		467FC83B23F3738B00C15592 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0445E2C5267891A400AF609F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0445E2C12678919C00AF609F /* FGTTimeTrackerViewController.h */,
+				0445E2C22678919C00AF609F /* FGTTimeTrackerViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		467FC82E23F3738B00C15592 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +82,7 @@
 		467FC83923F3738B00C15592 /* TimeTracker */ = {
 			isa = PBXGroup;
 			children = (
+				0445E2C5267891A400AF609F /* Views */,
 				0445E2BF2678911700AF609F /* Model */,
 				467FC85423F373D300C15592 /* Storyboards */,
 				467FC85323F373C900C15592 /* Resources */,
@@ -126,7 +139,7 @@
 		467FC82F23F3738B00C15592 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
 					467FC83623F3738B00C15592 = {
@@ -171,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0445E2BD2678911100AF609F /* FGTTimedTask.m in Sources */,
+				0445E2C32678919C00AF609F /* FGTTimeTrackerViewController.m in Sources */,
 				467FC83C23F3738B00C15592 /* AppDelegate.m in Sources */,
 				467FC84D23F3738C00C15592 /* main.m in Sources */,
 				467FC83F23F3738B00C15592 /* SceneDelegate.m in Sources */,
@@ -225,6 +239,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -283,6 +298,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
