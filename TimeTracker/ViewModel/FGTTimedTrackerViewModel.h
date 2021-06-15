@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //Properties
 //Array of type FGTTimedTask objects
-@property (nonatomic) NSMutableArray <FGTTimedTask *> *timedTaskArray;
+@property (nonatomic) NSMutableArray <FGTTimedTask *> *timedTasks;
 
 
 //Methods
