@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class FGTTimedTrackerViewModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FGTTimeTrackerViewController : UIViewController
+@interface FGTTimeTrackerViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic) FGTTimedTrackerViewModel *viewModel;
 
 @end
 

@@ -10,30 +10,42 @@
 //Import FGTTimedTask
 #import "FGTTimedTask.h"
 
+@interface FGTTimedTrackerViewModel ()
+
+@property (nonatomic) NSMutableArray <FGTTimedTask *> *internalTimedTasks;
+
+@end
+
 @implementation FGTTimedTrackerViewModel
 
--(instancetype)initWithTimedTask:(NSMutableArray *)timedTasks  {
+-(instancetype)init  {
     self = [super init];
     if (self){
-        _timedTasks = timedTasks;
+        _internalTimedTasks = [[NSMutableArray alloc] init];
     }
     return self;
 };
 
+- (NSArray<FGTTimedTask*> *)timedTasks {
+    return [_internalTimedTasks copy];
+}
+
 
 - (void)createTimedTaskWith:(NSString *)client
                     summary:(NSString *)summary
-                       rate:(NSNumber *)rate
-                      hours:(NSNumber *)hours{
+                       rate:(NSString *)rate
+                      hours:(NSString *)hours{
+    
+
     //1.Create new instace of the array
     FGTTimedTask *timedTask = [[FGTTimedTask alloc]
                                initWithClient:client
                                summary:summary
-                               hourlyRate:rate
-                               hrWorked:hours];
+                               hourlyRate: [rate doubleValue]
+                               hrWorked:[hours doubleValue]];
     
     //2.add objects to array
-    [_timedTasks addObject:timedTask];
+    [self.internalTimedTasks addObject: timedTask];
 };
 
 

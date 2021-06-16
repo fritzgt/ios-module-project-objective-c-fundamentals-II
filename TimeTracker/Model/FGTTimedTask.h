@@ -14,14 +14,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) NSString *client;
 @property (nonatomic) NSString *summary;
-@property (nonatomic) NSNumber *hourlyRate;
-@property (nonatomic) NSNumber *hrWorked;
+@property (nonatomic) double hourlyRate;
+@property (nonatomic) double hrWorked;
 @property (readonly, nonatomic) double total;
 
 - (instancetype)initWithClient:(NSString *) client
                     summary:(NSString *)summary
-                    hourlyRate: (NSNumber *)hourlyRate
-                      hrWorked: (NSNumber *)hrWorked;
+                    hourlyRate: (double)hourlyRate
+                      hrWorked: (double)hrWorked;
                    
 
 @end

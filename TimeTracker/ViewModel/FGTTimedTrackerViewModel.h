@@ -17,14 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 //Properties
 //Array of type FGTTimedTask objects
-@property (nonatomic) NSMutableArray <FGTTimedTask *> *timedTasks;
+@property (readonly, nonatomic) NSArray <FGTTimedTask *> *timedTasks;
 
 
 //Methods
 - (void)createTimedTaskWith:(NSString *)client
                     summary:(NSString *)summary
-                       rate:(NSNumber *)rate
-                      hours:(NSNumber *)hours;
+                       rate:(NSString *)rate
+                      hours:(NSString *)hours;
 
 @end
 

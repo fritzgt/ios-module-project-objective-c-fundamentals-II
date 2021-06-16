@@ -12,8 +12,8 @@
 
 - (instancetype)initWithClient:(NSString *) client
                     summary:(NSString *)summary
-                    hourlyRate: (NSNumber *)hourlyRate
-                      hrWorked: (NSNumber *)hrWorked
+                    hourlyRate: (double)hourlyRate
+                      hrWorked: (double)hrWorked
                    
 {
     self = [super init];
@@ -29,7 +29,7 @@
 
 //Getter for "total" readonly property = computed property in Swift
 - (double)total{
-    return [_hourlyRate doubleValue] * [_hrWorked doubleValue];
+    return _hourlyRate * _hrWorked;
 };
 
 
