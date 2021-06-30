@@ -10,11 +10,15 @@
 //Import FGTTimedTask
 #import "FGTTimedTask.h"
 
+
+
+//Internal Property
 @interface FGTTimedTrackerViewModel ()
 
 @property (nonatomic) NSMutableArray <FGTTimedTask *> *internalTimedTasks;
 
 @end
+
 
 @implementation FGTTimedTrackerViewModel
 
